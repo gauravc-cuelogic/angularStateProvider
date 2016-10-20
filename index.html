@@ -6,13 +6,15 @@
     <script src="app.js"></script>
 </head>
 <body ng-app="routerApp">
-<div ng-include="'./header.html'" id="header"></div>
+<!--<div ng-include="'./header.html'" id="header"></div>
 <div>
   <div ng-include="'./sidebar.html'" style="float:left"></div>
   <div class="container">
-      <div ui-view></div>
+      <div ui-view="content"></div>
   </div>
 </div>
 <div ng-include="'./footer.html'" id="header"></div>
+-->
+<div ui-view></div>
 </body>
 </html>

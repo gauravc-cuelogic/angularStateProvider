@@ -8,7 +8,26 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
       //level 1
       .state('home', {
             url: '/home',
-            templateUrl: 'partial-home.html'
+            //templateUrl: 'partial-home.html'
+            //url: '',
+            //abstract: true,
+            views: {
+                '': {
+                  templateUrl: 'partial-home.html',
+                  //controller:'homeController'
+                },
+               
+                'header@home': {
+                    templateUrl: 'header.html',
+                },
+                'sidebar@home': {
+                    templateUrl: 'sidebar.html',
+                },
+                'footer@home': {
+                    templateUrl: 'footer.html',
+                }
+            }
+
         })
         //level 2
       .state('home.list', {
